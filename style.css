@@ -6,29 +6,29 @@
 html {
     box-sizing: border-box;
     font-size: 15px;
-    --general-color: rgb(206, 42, 206);
+    --background-color: linear-gradient(to top left, rgb(156, 236, 254), rgb(32, 122, 142));
 }
 body {
     width: 100%;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.2rem;
+    color: white;
+    background: var(--background-color);
 }
 main {
-    background: blue;
-    height: 80%;
+    height: max-content;
     width: 80%;
     margin: 4rem auto;
+    padding: 3rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10rem;
     flex-wrap: wrap;
-    background-color: var(--general-color);
 }
 .image-container {
-    width: 20%;
-    height: 50%;
+    width: 30%;
 }
 img {
     border-radius: 30px;
@@ -45,7 +45,8 @@ img {
 .profile {
     width: clamp(100px, 70%, 85%);
 }
-.profile > * {
+.profile > *,
+.profile {
     margin: 0 0 2rem;
 
 }
@@ -59,12 +60,10 @@ img {
     font-style: italic;
     letter-spacing: 1.2px;
     word-spacing: 2px;
-    /* background-color: gray; */
 }
 .link {
     text-decoration: none;
-    color: black;
-    /* font-size: 1.5rem; */
+    color: inherit;
 }
 .link:hover {
     color: blue;
@@ -73,6 +72,7 @@ img {
 }
 .time {
     display: flex;
-    gap: 30px;
+    gap: 10px;
     width: 100%;
+    flex-wrap: wrap;
 }
