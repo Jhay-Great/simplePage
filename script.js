@@ -8,4 +8,3 @@ day.textContent = `Today: ${new Intl.DateTimeFormat('en-GB', {weekday: "long"}).
 
 const timeInMilliseconds = date.getTime();
 time.textContent = `Time: ${timeInMilliseconds}`
-console.log(date.getTime());
